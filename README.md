@@ -40,7 +40,8 @@ llamafactory-cli webui
 - Once you have completed the above process, all you need is to fine-tune the large language model using the desired dataset and various adjustable parameters in the visualization interface. We have completed the fine-tuning and generation of three comparison LLM (Oral Llama3-8B, Mistral-7B and Falcon-7B) using the Cantonese dataset collected independently.
 
 ### Training of Cantonese-Transformer
-To utilize the large language model proposed in this project for Cantonese translation with human feedback reinforcement learning, the first step is to clone this repository.
+- To utilize the large language model proposed in this project for Cantonese translation with human feedback reinforcement learning, the first step is to clone this repository.
 ```
 git clone --depth 1 https://github.com//Z1mZH/Cantonese-Transformer_main.git
 ```
+- Then four ipynb files, actor, critic, rlhf and test, are run in the already labeled order, the first file is used to train a generative Cantonese translation large language model, the second file evaluates the large language model of the first file and performs human feedback reinforcement learning, followed by generation and evaluation, and the final experimental results are obtained.
